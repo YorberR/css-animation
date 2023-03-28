@@ -5,205 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            width: 100%;
-            display: grid;
-            place-items: center;
-        }
-        .pantalla{
-            position: relative;
-            border: 8px solid black;
-            height: 100%;
-            width: 100%;
-            background: #CCEFFF;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22),;
-            overflow: hidden;
-        }
-        .layer-1 {
-            position: absolute;
-            z-index: 1;
-            height: 600px;
-            width: 150px;
-            background: rgba(255, 255, 255, 0.5);
-            bottom: 0;
-            right: 450px;
-        }
-        .layer-2 {
-            position: absolute;
-            z-index: 2;
-            height: 600px;
-            width: 150px;
-            background: rgba(255, 255, 255, 0.5);
-            bottom: 0;
-            left: 450px;
-        }
-        .layer-3 {
-            position: absolute;
-            border: 1px solid black;
-            border-radius: 5%;
-            z-index: 3;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            width: 600px;
-            height: 500px;
-            background: wheat;
-            bottom: 0;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22),;
-        }
-        .layer-4 {
-            position: absolute;
-            z-index: 4;
-            height: 450px;
-            width: 150px;
-            background: rgba(255, 255, 255, 0.5);
-            bottom: 0;
-            left: 200px;
-        }
-        .layer-5 {
-            position: absolute;
-            z-index: 5;
-            border-radius: 5%;
-            border: 1px solid black;
-            left: 0;
-            margin: 0 auto;
-            width: 600px;
-            height: 350px;
-            background: wheat;
-            bottom: 0;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-        }
-        .layer-6 {
-            position: absolute;
-            z-index: 6;
-            height: 300px;
-            width: 150px;
-            background: rgba(255, 255, 255, 0.5);
-            bottom: 0;
-            right: 200px;
-        }
-        .layer-7 {
-            position: absolute;
-            z-index: 7;
-            border: 1px solid black;
-            border-radius: 5%;
-            right: 0;
-            margin: 0 auto;
-            width: 600px;
-            height: 200px;
-            background: wheat;
-            bottom: 0;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22),;
-        }
-        .layer-8 {
-            position: absolute;
-            z-index: 8;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            width: 600px;
-            height: 150px;
-            background: green;
-            bottom: 0;
-        }
-        .layer-9 {
-            position: absolute;
-            z-index: 9;
-            right: 0;
-            margin: 0 auto;
-            width: 500px;
-            height: 180px;
-            border-radius: 50%;
-            background: white;
-            top:600px;
-        }
-        .layer-10 {
-            position: absolute;
-            z-index: 10;
-            left: 0;
-            margin: 0 auto;
-            width: 400px;
-            height: 180px;
-            border-radius: 50%;
-            background: white;
-            top:600px;
-        }
-      
-        .left-ear--outer{
-            background: white;
-            border-radius: 90%;
-            width: 40px;
-            height: 90px;
-            position: absolute;
-            left: 15px;
-        }
-        .left-ear--inner{
-            background: pink;
-            border-radius: 90%;
-            width: 20px;
-            height: 80px;
-            position: absolute;
-            left: 25px; 
-            top: 8px;
-        }
-        .right-ear--outer{
-            background: white;
-            border-radius: 90%;
-            width: 40px;
-            height: 90px;
-            position: absolute;
-            right: 15px;
-        }
-        .right-ear--inner{
-            background: pink;
-            border-radius: 90%;
-            width: 20px;
-            height: 80px;
-            position: absolute;
-            right: 25px; 
-            top: 8px;
-        }
-        .head{
-            background: white;
-            border-radius: 50%;
-            height: 100px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            position: absolute;
-            top:60px;
-            width: 100%;
-        }
-        .head__eye{
-            background: red;
-            width: 10px;
-            height: 10px;
-            border-radius: 100%;
-            position: absolute;
-            top: 25px;
-        }
-        .head__eye--left{
-            left: 55px;
-        } 
-        .head__eye--right{
-            right: 55px;
-        } 
-        /* .floor{
-            background: green;
-            height: 20px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            border-top: 80%;
-        } */
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="pantalla">
         <div class="layer-1">
+            <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -216,6 +23,7 @@
             </div>
         </div>
         <div class="layer-2">
+            <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -228,9 +36,12 @@
             </div>
         </div>
         <div class="layer-3">
-            <div class="floor"></div>
+            <div class="grass"></div>
+            <div class="grass__zigzag"></div>
+            <div class="shadow"></div>
         </div>
         <div class="layer-4">
+            <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -243,9 +54,12 @@
             </div>
         </div>
         <div class="layer-5">
-            <div class="floor"></div>
+            <div class="grass"></div>
+            <div class="grass__zigzag"></div>
+            <div class="shadow"></div>
         </div>
         <div class="layer-6">
+            <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -258,10 +72,28 @@
             </div>
         </div>
         <div class="layer-7">
-            <div class="floor"></div>
+            <div class="grass"></div>
+            <div class="grass__zigzag"></div>
+            <div class="shadow"></div>
         </div>
-        <div class="layer-8"></div>
-        <div class="layer-9"></div>
+        <div class="layer-8">
+            <input type="checkbox">
+            <div class="left-ear--outer"></div>
+            <div class="left-ear--inner"></div>
+            <div class="right-ear--outer"></div>
+            <div class="right-ear--inner"></div>
+            <div class="head">
+                <div class="head__eye 
+                head__eye--left"></div>
+                <div class="head__eye 
+                head__eye--right"></div>
+            </div>
+        </div>
+        <div class="layer-9">
+            <div class="grass"></div>
+            <div class="grass__zigzag"></div>
+            <div class="shadow"></div>
+        </div>
         <div class="layer-10"></div>
     </div>
 </body>
