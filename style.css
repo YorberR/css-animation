@@ -4,7 +4,6 @@ body {
     margin: 0;
     height: 100vh;
     width: 100%;
-    display: grid;
     place-items: center;
 }
 .pantalla{
@@ -25,7 +24,6 @@ body {
 
     animation: conejo1 1.5s ease-in-out infinite;
 }
-
 @keyframes conejo1 {
     0%{
         bottom: 0;
@@ -60,7 +58,6 @@ body {
         bottom: 0;
     }
 }
-
 .layer-3 {
     position: absolute;
     z-index: 3;
@@ -82,17 +79,17 @@ body {
     width: 150px;
     bottom: 0;
     left: 200px;
-    animation: conejo3 2s ease infinite;
+    animation: conejo3 3s ease infinite;
     animation-delay: 700ms;
 }
 @keyframes conejo3 {
     0%{
         translate: 200px;
     }
-    50%{
+    40%,50%{
         translate: -200px;
     }
-    100%{
+    80% ,100%{
         translate: 200px;
     }
 }
@@ -119,7 +116,7 @@ body {
     animation: conejo4 3s ease-in-out infinite;
 }
 @keyframes conejo4 {
-    0%{
+    0%, 10%{
         bottom: 0px;
         translate: -100px;
     }
@@ -129,12 +126,11 @@ body {
     60%{
         translate: 80px;
     }
-    
     80%{
         bottom: 0px;
         translate: 80px;
     }
-    100%{
+    90%,100%{
         bottom: 0px;
         translate: -100px;
     }
@@ -160,10 +156,10 @@ body {
     width: 150px;
     bottom: 0;
     left: 450px;
-    animation: conejo5 5s ease infinite;
+    animation: conejo5 6s ease infinite;
 }
 @keyframes conejo5 {
-    0%{
+    0%,10%{
         bottom: 20px;
     }
     20%{
@@ -184,7 +180,7 @@ body {
         translate: 0px;
         rotate: 180deg;
     }
-    90%{
+    80%,90%{
         rotate: 270deg;
         translate: -350px;
     }
@@ -300,7 +296,7 @@ body {
     height: 15px;
     background-color: #75bb75;
   }
-  .grass__zigzag {
+.grass__zigzag {
     position: absolute;
     top: 15px;
     width: 100%;
@@ -311,7 +307,7 @@ body {
     background-size: 30px 30px;
     background-repeat: repeat;
   }
-  .shadow {
+.shadow {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -319,19 +315,47 @@ body {
     box-shadow: inset 0px 25px 20px 0px rgba(0,0,0,0.3);
     /* z-index: 3; */
   }
-  input[type=checkbox]{
+  input:checked {
+    z-index: 12;
+    counter-increment: score;
+  }
+  input[type=checkbox] {
     appearance: none;
     cursor: pointer;
-    height: 50px;
+    height: 100px;
     margin: 0;
-    position: relative;
+    position: absolute;
     top: 0;
-    width: 80px;
-    z-index: 2;
+    width:  150px;
+    z-index: 12;
+  }
+.score-win{
+    top: 50px;   
+    position: absolute; 
+    color: red;
+    bottom: 0;
+    right: 150px;
 }
-input:checked{
-    counter-increment: score;
+.score-win::after{
+    position: absolute; 
+    color: gold;
+    content: counter(score);
 }
-.score::after{
-    content: counter();
+.GitHub{
+    z-index: 11;
+    position: absolute;
+    margin: 0 auto;
+    left: 600px;
+    right: 0;
+    bottom: 110px;
+}
+.logo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+    position: absolute;
+    margin: 0 auto;
+    left: 550px;
+    bottom: 100px;    
 }
