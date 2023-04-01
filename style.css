@@ -1,3 +1,11 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
 body {
     display: grid;
     counter-reset: score;
@@ -17,10 +25,10 @@ body {
 }
 .layer-1 {
     position: absolute;
-    height: 700px;
-    width: 150px;
+    height: 70rem;
+    width: 15rem;
     bottom: 0;
-    right: 450px;
+    right: 45rem;
 
     animation: conejo1 1.5s ease-in-out infinite;
 }
@@ -29,7 +37,7 @@ body {
         bottom: 0;
     }
     50%{
-        bottom: -70px;
+        bottom: -7rem;
     }
     100%{
         bottom: 0;
@@ -38,10 +46,10 @@ body {
 .layer-2 {
     position: absolute;
     z-index: 2;
-    height: 700px;
-    width: 150px;
+    height: 70rem;
+    width: 15rem;
     bottom: 0;
-    left: 450px;
+    left: 45rem;
     animation: conejo2 1s ease-out infinite;
 }
 @keyframes conejo2 {
@@ -49,10 +57,10 @@ body {
         bottom: 0;
     }
     30%{
-        bottom: -90px;
+        bottom: -9rem;
     }
     70%{
-        bottom: -30px;
+        bottom: -3rem;
     }
     100%{
         bottom: 0;
@@ -64,33 +72,33 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 600px;
-    height: 600px;
+    width: 80rem;
+    height: 60rem;
     bottom: 0;
     background: #AC5E55;
     border: 1px solid black; 
-    border-radius: 20px;
+    border-radius: 2rem;
     overflow: hidden; 
 }
 .layer-4 {
     position: absolute;
     z-index: 4;
-    height: 600px;
-    width: 150px;
+    height: 60rem;
+    width: 15rem;
     bottom: 0;
-    left: 200px;
+    left: 20rem;
     animation: conejo3 3s ease infinite;
     animation-delay: 700ms;
 }
 @keyframes conejo3 {
     0%{
-        translate: 200px;
+        translate: 20rem;
     }
     40%,50%{
-        translate: -200px;
+        translate: -20rem;
     }
     80% ,100%{
-        translate: 200px;
+        translate: 20rem;
     }
 }
 .layer-5 {
@@ -98,41 +106,41 @@ body {
     z-index: 5;
     left: 0;
     margin: 0 auto;
-    width: 600px;
-    height: 500px;
+    width: 60rem;
+    height: 50rem;
     bottom: 0;
     background: #AC5E55;
-    border: 1px solid black; 
-    border-radius: 20px;
+    border: 0.1rem solid black; 
+    border-radius: 2rem;
     overflow: hidden; 
 }
 .layer-6 {
     position: absolute;
     z-index: 6;
-    height: 500px;
-    width: 150px;
+    height: 50rem;
+    width: 15rem;
     bottom: 0;
-    right: 200px;
+    right: 20rem;
     animation: conejo4 3s ease-in-out infinite;
 }
 @keyframes conejo4 {
     0%, 10%{
         bottom: 0px;
-        translate: -100px;
+        translate: -10rem;
     }
     30%{
-        bottom: -70px;
+        bottom: -7rem;
     }
     60%{
-        translate: 80px;
+        translate: 8rem;
     }
     80%{
         bottom: 0px;
-        translate: 80px;
+        translate: 8rem;
     }
     90%,100%{
         bottom: 0px;
-        translate: -100px;
+        translate: -10rem;
     }
 
 }
@@ -141,40 +149,40 @@ body {
     z-index: 7;
     right: 0;
     margin: 0 auto;
-    width: 600px;
-    height: 400px;
+    width: 60rem;
+    height: 40rem;
     bottom: 0;
     background: #AC5E55;
-    border: 1px solid black; 
-    border-radius: 20px;
+    border: 0.1rem solid black; 
+    border-radius: 2rem;
     overflow: hidden; 
 }
 .layer-8 {
     position: absolute;
     z-index: 8;
-    height: 400px;
-    width: 150px;
+    height: 40rem;
+    width: 15rem;
     bottom: 0;
-    left: 450px;
+    left: 45rem;
     animation: conejo5 6s ease infinite;
 }
 @keyframes conejo5 {
     0%,10%{
-        bottom: 20px;
+        bottom: 2rem;
     }
     20%{
         bottom: 0p;
     }
     30%{
-        bottom: -70px;
+        bottom: -7rem;
     }
     50%{
-        bottom: -20px;
+        bottom: -2rem;
         rotate: 90deg;
     }
     60%{
         rotate: 90deg;
-        translate: 150px;
+        translate: 15rem;
     }
     70%{
         translate: 0px;
@@ -182,20 +190,20 @@ body {
     }
     80%,90%{
         rotate: 270deg;
-        translate: -350px;
+        translate: -35rem;
     }
 }
 .layer-9 {
     position: absolute;
     z-index: 9;
-    left: 100px;
+    left: 10rem;
     margin: 0 auto;
-    width: 650px;
-    height: 300px;
+    width: 65rem;
+    height: 30rem;
     bottom: 0;
     background: #AC5E55;
-    border: 1px solid black; 
-    border-radius: 20px;
+    border: 0.1rem solid black; 
+    border-radius: 2rem;
     overflow: hidden; 
 }
 .layer-10 {
@@ -204,107 +212,107 @@ body {
     left: 0;
     margin: 0 auto;
     width: 100%;
-    height: 180px;
+    height: 18rem;
     border-radius: 50%;
     background: white;
-    top:600px;
+    top:60rem;
 }
 
 .left-ear--outer{
     background: white;
     border-radius: 90%;
-    width: 40px;
-    height: 90px;
+    width: 4rem;
+    height: 9rem;
     position: absolute;
-    left: 15px;
-    top: 8px;
+    left: 1.5rem;
+    top: 0.8rem;
 }
 .left-ear--inner{
     background: pink;
     border-radius: 90%;
-    width: 20px;
-    height: 80px;
+    width: 2rem;
+    height: 8rem;
     position: absolute;
-    left: 25px; 
-    top: 8px;
+    left: 2.5rem; 
+    top: 0.8rem;
 }
 .right-ear--outer{
     background: white;
     border-radius: 90%;
-    width: 40px;
-    height: 90px;
+    width: 4rem;
+    height: 9rem;
     position: absolute;
-    right: 15px;
-    top: 8px;
+    right: 1.5rem;
+    top: 0.8rem;
 }
 .right-ear--inner{
     background: pink;
     border-radius: 90%;
-    width: 20px;
-    height: 80px;
+    width: 2rem;
+    height: 8rem;
     position: absolute;
-    right: 25px; 
-    top: 8px;
+    right: 2.5rem; 
+    top: 0.8rem;
 }
 .head{
     background: white;
     border-radius: 50%;
-    height: 100px;
+    height: 10rem;
     left: 0;
     right: 0;
     margin: 0 auto;
     position: absolute;
-    top:60px;
+    top:6rem;
     width: 100%;
 }
 .head__eye{
     background: red;
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     position: absolute;
-    top: 25px;
+    top: 2.5rem;
 
     animation: blink 1s infinite;
 }
 
 @keyframes blink{
     0%{
-        height: 10px;
+        height: 1rem;
     }
     5%{
-        transform: translate(0px, 5px);
-        height: 3px;
+        transform: translate(0rem, 0.5rem);
+        height: 0.3rem;
     }
     10%{
         transform: translate(0px, 0px);
-        height: 10px;
+        height: 1rem;
     }
 }
 
 .head__eye--left{
-    left: 55px;
+    left: 5.5rem;
 } 
 .head__eye--right{
-    right: 55px;
+    right: 5.5rem;
 } 
 
 .grass {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 15px;
+    height: 1.5rem;
     background-color: #75bb75;
   }
 .grass__zigzag {
     position: absolute;
-    top: 15px;
+    top: 1.5rem;
     width: 100%;
-    height: 30px;
+    height: 3.0rem;
     background-color: #934840;
     background-image:  linear-gradient(135deg, #75bb75 25%, transparent 25%), linear-gradient(225deg, #75bb75 25%, transparent 25%), linear-gradient(45deg, #AC5E55 25%, transparent 25%), linear-gradient(315deg, #AC5E55 25%, #934840 25%);
-    background-position:  15px 0, 15px 0, 0 0, 0 0;
-    background-size: 30px 30px;
+    background-position:  1.5rem 0, 1.5rem 0, 0 0, 0 0;
+    background-size: 3rem 3rem;
     background-repeat: repeat;
   }
 .shadow {
@@ -312,7 +320,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    box-shadow: inset 0px 25px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 2.5rem 2rem 0px rgba(0,0,0,0.3);
     /* z-index: 3; */
   }
   input:checked {
@@ -322,19 +330,19 @@ body {
   input[type=checkbox] {
     appearance: none;
     cursor: pointer;
-    height: 100px;
+    height: 8rem;
     margin: 0;
     position: absolute;
     top: 0;
-    width:  150px;
+    width:  12rem;
     z-index: 12;
   }
 .score-win{
-    top: 50px;   
+    top: 5rem;   
     position: absolute; 
     color: red;
     bottom: 0;
-    right: 150px;
+    right: 15rem;
 }
 .score-win::after{
     position: absolute; 
@@ -345,17 +353,17 @@ body {
     z-index: 11;
     position: absolute;
     margin: 0 auto;
-    left: 600px;
+    left: 60rem;
     right: 0;
-    bottom: 110px;
+    bottom: 11rem;
 }
 .logo{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     z-index: 11;
     position: absolute;
     margin: 0 auto;
-    left: 550px;
-    bottom: 100px;    
+    left: 55rem;
+    bottom: 10rem;    
 }
